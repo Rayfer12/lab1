@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rayan Ferhat Al Jaidi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        img {
+            max-width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1);
+        }
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-media a:hover {
+            color: #007bff;
+        }
+       
+        input[type="checkbox"] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 2px solid #007bff; 
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            margin-right: 5px;
+            position: relative;
+            cursor: pointer;
+        }
+        input[type="checkbox"]:checked:after {
+            content: '\2714'; 
+            display: block;
+            color: #007bff; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rayan Ferhat Al Jaidi</h3>
+        <img src="pfp.png" alt="Profile Picture" title="Rayan">
+        
+    </header>
+    <div class="container">
+        <h3>Student ID – Class</h3>
+        <p>2702426444 - L1CC</p>
+        
+        <h3>Brief Description</h3>
+        <p>Im a Computer science student, really enjoy computers and playing sports</p>
+        
+        <h3>Gender</h3>
+        <form>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" disabled>
+            <label for="female">Female</label>ssss
+        </form>
+        
+        <h3>Social Media</h3>
+        <div class="social-media">
+            <a href="https://www.instagram.com/rayanjaidi_?igsh=OXl5MzFjMHR6N3A0&utm_source=qr">Instagram</a>
+        
+        
+        </div>
+        
+        <h3>Education</h3>
+        <ol>
+            <li><a href="https://binus.ac.id/">Binus International University</a></li>
+            
+        </ol>
+        
+        <h3>Programming Skills</h3>
+        <ul>
+            <li><input type="checkbox" id="html" name="html" value="html" checked disabled><label for="html">HTML</label></li>
+            <li><input type="checkbox" id="css" name="css" value="css" checked disabled><label for="css">CSS</label></li>
+            <li><input type="checkbox" id="javascript" name="javascript" value="javascript" checked disabled><label for="javascript">JavaScript</label></li>
+            
+        </ul>
+        
+        <h3>Hobbies / Interests / Favorites</h3>
+        <ul>
+            <li>Drumming</li>
+            <li>Basketball</li>
+            <li>Games</li>
+            
+        </ul>
+    </div>
+</body>
+</html>
